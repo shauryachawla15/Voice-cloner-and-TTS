@@ -1,29 +1,44 @@
-🚀 Built a Voice Cloning + Text-to-Speech Pipeline using AI
+# 🎙️ Voice Cloning + Text-to-Speech Pipeline (Minimax API)
 
-Over the past couple of days, I explored how modern AI systems can replicate and generate human-like speech.
+This project demonstrates a complete pipeline for **AI-based voice cloning and text-to-speech (TTS)** using Python and API integration.
 
-🔊 What I implemented:
+It allows you to:
+- Upload a voice sample 🎤  
+- Clone the voice 🧠  
+- Generate speech from text in that cloned voice 🔊  
 
-* Uploaded voice samples and generated unique voice IDs
-* Built a pipeline for voice cloning using API-based models
-* Converted text into natural-sounding speech (TTS)
-* Handled real-world challenges like API auth, audio formats, and debugging responses
+---
 
-🧠 Key learnings:
+## 🚀 Features
 
-* Difference between TTS and actual voice cloning
-* Working with base64 audio data and decoding it
-* Handling API errors (auth issues, file handling, rate limits, etc.)
-* Importance of clean audio input for better cloning quality
+- ✅ Voice sample upload (audio → file_id)
+- ✅ Optional prompt audio for better voice quality
+- ✅ Voice cloning using AI models
+- ✅ Text-to-speech generation using cloned voice
+- ✅ Base64 audio decoding and file saving
+- ✅ Error handling for API responses
 
-⚙️ Tech stack:
-Python | Requests | AI Speech APIs | Audio Processing
+---
 
-🎯 Outcome:
-Successfully generated speech outputs and experimented with cloning my own voice using sample audio.
+## 🧠 How It Works
 
-This project gave me a deeper understanding of how AI voice systems are built and deployed in real-world applications like voice bots and assistants.
+### Step 1: Upload Voice Sample
+- Upload a `.mp3` or `.wav` file
+- Get a `file_id`
 
-Excited to take this further into real-time AI voice agents 🚀
+### Step 2: (Optional) Upload Prompt Audio
+- Short sample (3–5 sec)
+- Improves tone/style of generated voice
 
-#AI #MachineLearning #VoiceCloning #TextToSpeech #Python #AIProjects #LearningInPublic
+### Step 3: Clone Voice
+- Use `file_id` + optional `prompt_file_id`
+- Generate a custom `voice_id`
+
+### Step 4: Generate Speech
+- Input text
+- Output = speech in cloned voice
+
+---
+
+## 📁 Project Structure
+
