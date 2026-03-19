@@ -41,4 +41,3 @@ It allows you to:
 ---
 
 ## 📁 Project Structure
-
